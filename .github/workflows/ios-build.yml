@@ -20,7 +20,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7'
-      
+
       - name: Install CocoaPods
         run: |
           sudo gem install cocoapods
@@ -29,10 +29,10 @@ jobs:
       - name: Set up Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '14.2'
+          xcode-version: '15.0.1'
 
       - name: Clean build folder
-        run: xcodebuild clean -project RickMorty.xcodeproj -scheme RickMorty -configuration Release
+        run: xcodebuild clean -workspace RickMorty.xcworkspace -scheme RickMorty -configuration Debug
 
-      - name: Build the app
-        run: xcodebuild build -project RickMorty.xcodeproj -scheme RickMorty -configuration Release
+      - name: Build the app for simulator
+        run: xcodebuild build -workspace RickMorty.xcworkspace -scheme RickMorty -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' -configuration Debug CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS=""

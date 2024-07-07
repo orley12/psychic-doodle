@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094E4910F897BF31762CC246 /* Pods_RickMortyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9240699298CF6702E61FA704 /* Pods_RickMortyTests.framework */; };
 		5E00C8832C38B23F00E359A4 /* RickMortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00C8822C38B23F00E359A4 /* RickMortyApp.swift */; };
 		5E00C8852C38B23F00E359A4 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00C8842C38B23F00E359A4 /* CharactersView.swift */; };
 		5E00C8872C38B24100E359A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E00C8862C38B24100E359A4 /* Assets.xcassets */; };
@@ -32,6 +33,8 @@
 		5EFD76E42C3B1DAF0072D434 /* CharactersViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD76E32C3B1DAF0072D434 /* CharactersViewModelTest.swift */; };
 		5EFD76E62C3B30210072D434 /* ApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD76E52C3B30210072D434 /* ApiClientMock.swift */; };
 		5EFD76E82C3B31560072D434 /* CharacterRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD76E72C3B31560072D434 /* CharacterRepositoryMock.swift */; };
+		8885E918C05AF3409C6BD6AB /* Pods_RickMorty_RickMortyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F36420C807B9822CA3ACDF2 /* Pods_RickMorty_RickMortyUITests.framework */; };
+		AFE1E6D434A64A6DB9602114 /* Pods_RickMorty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB01071BF8513E888956566 /* Pods_RickMorty.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07D7B1B68C1FE4DF67844738 /* Pods-RickMorty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMorty.debug.xcconfig"; path = "Target Support Files/Pods-RickMorty/Pods-RickMorty.debug.xcconfig"; sourceTree = "<group>"; };
+		0F36420C807B9822CA3ACDF2 /* Pods_RickMorty_RickMortyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMorty_RickMortyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51F22979668E9094643E126A /* Pods-RickMortyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyTests.release.xcconfig"; path = "Target Support Files/Pods-RickMortyTests/Pods-RickMortyTests.release.xcconfig"; sourceTree = "<group>"; };
 		5E00C87F2C38B23F00E359A4 /* RickMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E00C8822C38B23F00E359A4 /* RickMortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyApp.swift; sourceTree = "<group>"; };
 		5E00C8842C38B23F00E359A4 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
@@ -80,6 +86,12 @@
 		5EFD76E32C3B1DAF0072D434 /* CharactersViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModelTest.swift; sourceTree = "<group>"; };
 		5EFD76E52C3B30210072D434 /* ApiClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientMock.swift; sourceTree = "<group>"; };
 		5EFD76E72C3B31560072D434 /* CharacterRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryMock.swift; sourceTree = "<group>"; };
+		6AB01071BF8513E888956566 /* Pods_RickMorty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMorty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D1EBD797C67A37C0246DE6 /* Pods-RickMorty-RickMortyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMorty-RickMortyUITests.debug.xcconfig"; path = "Target Support Files/Pods-RickMorty-RickMortyUITests/Pods-RickMorty-RickMortyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		76BC854F2BD23B7CB2B04B82 /* Pods-RickMorty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMorty.release.xcconfig"; path = "Target Support Files/Pods-RickMorty/Pods-RickMorty.release.xcconfig"; sourceTree = "<group>"; };
+		9240699298CF6702E61FA704 /* Pods_RickMortyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMortyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8CE640D2CEEB5F180B658F /* Pods-RickMortyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyTests.debug.xcconfig"; path = "Target Support Files/Pods-RickMortyTests/Pods-RickMortyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C905816E57E2057E730B97A2 /* Pods-RickMorty-RickMortyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMorty-RickMortyUITests.release.xcconfig"; path = "Target Support Files/Pods-RickMorty-RickMortyUITests/Pods-RickMorty-RickMortyUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE1E6D434A64A6DB9602114 /* Pods_RickMorty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094E4910F897BF31762CC246 /* Pods_RickMortyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8885E918C05AF3409C6BD6AB /* Pods_RickMorty_RickMortyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +129,8 @@
 				5E00C8922C38B24100E359A4 /* RickMortyTests */,
 				5E00C89C2C38B24100E359A4 /* RickMortyUITests */,
 				5E00C8802C38B23F00E359A4 /* Products */,
+				8979B174DB3E2F835F0FEC7C /* Pods */,
+				CCE1A0B7A1635FD0F2C5BE30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +278,29 @@
 			path = Characters;
 			sourceTree = "<group>";
 		};
+		8979B174DB3E2F835F0FEC7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07D7B1B68C1FE4DF67844738 /* Pods-RickMorty.debug.xcconfig */,
+				76BC854F2BD23B7CB2B04B82 /* Pods-RickMorty.release.xcconfig */,
+				70D1EBD797C67A37C0246DE6 /* Pods-RickMorty-RickMortyUITests.debug.xcconfig */,
+				C905816E57E2057E730B97A2 /* Pods-RickMorty-RickMortyUITests.release.xcconfig */,
+				9D8CE640D2CEEB5F180B658F /* Pods-RickMortyTests.debug.xcconfig */,
+				51F22979668E9094643E126A /* Pods-RickMortyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCE1A0B7A1635FD0F2C5BE30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB01071BF8513E888956566 /* Pods_RickMorty.framework */,
+				0F36420C807B9822CA3ACDF2 /* Pods_RickMorty_RickMortyUITests.framework */,
+				9240699298CF6702E61FA704 /* Pods_RickMortyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E00C8A32C38B24100E359A4 /* Build configuration list for PBXNativeTarget "RickMorty" */;
 			buildPhases = (
+				4A0B529D12F5CD6B05EADE00 /* [CP] Check Pods Manifest.lock */,
 				5E00C87B2C38B23E00E359A4 /* Sources */,
 				5E00C87C2C38B23E00E359A4 /* Frameworks */,
 				5E00C87D2C38B23E00E359A4 /* Resources */,
@@ -285,6 +326,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E00C8A62C38B24100E359A4 /* Build configuration list for PBXNativeTarget "RickMortyTests" */;
 			buildPhases = (
+				80A867B09587A2629725EBAE /* [CP] Check Pods Manifest.lock */,
 				5E00C88B2C38B24100E359A4 /* Sources */,
 				5E00C88C2C38B24100E359A4 /* Frameworks */,
 				5E00C88D2C38B24100E359A4 /* Resources */,
@@ -303,6 +345,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E00C8A92C38B24100E359A4 /* Build configuration list for PBXNativeTarget "RickMortyUITests" */;
 			buildPhases = (
+				0648AB18CE603CC4C1B11595 /* [CP] Check Pods Manifest.lock */,
 				5E00C8952C38B24100E359A4 /* Sources */,
 				5E00C8962C38B24100E359A4 /* Frameworks */,
 				5E00C8972C38B24100E359A4 /* Resources */,
@@ -386,6 +429,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0648AB18CE603CC4C1B11595 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickMorty-RickMortyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A0B529D12F5CD6B05EADE00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickMorty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80A867B09587A2629725EBAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickMortyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E00C87B2C38B23E00E359A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -450,6 +562,9 @@
 		5E00C8A12C38B24100E359A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -568,13 +683,18 @@
 		};
 		5E00C8A42C38B24100E359A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D7B1B68C1FE4DF67844738 /* Pods-RickMorty.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RickMorty/Preview Content\"";
-				DEVELOPMENT_TEAM = 2Z6X795KD6;
+				DEVELOPMENT_TEAM = K5L4Y4H783;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -589,6 +709,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oosolarin.RickMorty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -597,13 +718,15 @@
 		};
 		5E00C8A52C38B24100E359A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76BC854F2BD23B7CB2B04B82 /* Pods-RickMorty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RickMorty/Preview Content\"";
-				DEVELOPMENT_TEAM = 2Z6X795KD6;
+				DEVELOPMENT_TEAM = K5L4Y4H783;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -618,6 +741,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oosolarin.RickMorty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -626,7 +750,11 @@
 		};
 		5E00C8A72C38B24100E359A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8CE640D2CEEB5F180B658F /* Pods-RickMortyTests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -646,6 +774,7 @@
 		};
 		5E00C8A82C38B24100E359A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F22979668E9094643E126A /* Pods-RickMortyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -666,7 +795,11 @@
 		};
 		5E00C8AA2C38B24100E359A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D1EBD797C67A37C0246DE6 /* Pods-RickMorty-RickMortyUITests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -684,6 +817,7 @@
 		};
 		5E00C8AB2C38B24100E359A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C905816E57E2057E730B97A2 /* Pods-RickMorty-RickMortyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
