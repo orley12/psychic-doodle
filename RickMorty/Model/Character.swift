@@ -11,7 +11,8 @@ struct CharactersRespose: Decodable  {
     let results: [Character]
 }
 
-struct Character: Decodable  {
+struct Character: Decodable, Identifiable, Hashable  {
+    
     let id: Int
     let name: String
     let image: String
@@ -20,7 +21,7 @@ struct Character: Decodable  {
     let location: Location
 }
 
-struct Location: Decodable  {
+struct Location: Decodable, Hashable  {
     let name: String
 }
 

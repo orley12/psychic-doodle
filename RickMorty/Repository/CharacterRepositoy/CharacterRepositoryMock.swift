@@ -19,7 +19,7 @@ class CharacterRepositoryMock: CharacterRepository {
 
     func loadCharacters() async throws -> [Character] {
         if isErrorTest {
-            throw ApiError.http(error: "We unable to load characters")
+            throw ErrorType.http(error: "We unable to load characters")
         }
         
         return CharactersRespose().results
@@ -27,7 +27,7 @@ class CharacterRepositoryMock: CharacterRepository {
     
     func loadCharacter(id: Int) async throws -> Character{
         if isErrorTest {
-            throw ApiError.http(error: "We unable to load the requested character")
+            throw ErrorType.http(error: "We unable to load the requested character")
         }
         
         return Character()

@@ -9,31 +9,34 @@ import SwiftUI
 
 struct NetworkImageView: View {
     
-    image
+    let url: URL?
+    var width: CGFloat?
+    let height: CGFloat?
+    var contentMode: ContentMode = .fit
     
     var body: some View {
-        HStack {
-            AsyncImage(url: URL(string: appetizer.imageURL)) { image in
-                            image
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 120, height: 90)
-                                .cornerRadius(8)
-                        } placeholder: {
-                            Image("food-placeholder")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 120, height: 90)
-                                .cornerRadius(8)
-                        }
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world! \(String(describing: viewModel.character))")
+        AsyncImage(url:  url) { image in
+            image
+                .resizable()
+                .aspectRatio(contentMode: contentMode)
+                .frame(width: width, height: height)
+                .cornerRadius(8)
+        } placeholder: {
+            ActivityIndicator(style: .medium)
+                .frame(
+                    width: width,
+                    height: height,
+                    alignment: .center
+                )
         }
+       
     }
 }
 
 #Preview {
-    CharactersView()
+    NetworkImageView(
+        url: URL(string: ""),
+        width: 90,
+        height: 90
+    )
 }

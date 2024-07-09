@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class LoggerFacadeMock: LoggerFacade {
+    func log(error: String) {
+    }
+}

@@ -15,6 +15,12 @@
 		5E00C8942C38B24100E359A4 /* RickMortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00C8932C38B24100E359A4 /* RickMortyTests.swift */; };
 		5E00C89E2C38B24100E359A4 /* RickMortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00C89D2C38B24100E359A4 /* RickMortyUITests.swift */; };
 		5E00C8A02C38B24100E359A4 /* RickMortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E00C89F2C38B24100E359A4 /* RickMortyUITestsLaunchTests.swift */; };
+		5E3AF8402C3DAEC10084D4B5 /* LoggerFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF83F2C3DAEC10084D4B5 /* LoggerFacade.swift */; };
+		5E3AF8432C3DB1A50084D4B5 /* LoggerFacadeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF8422C3DB1A50084D4B5 /* LoggerFacadeImpl.swift */; };
+		5E3AF8462C3DC6CD0084D4B5 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF8452C3DC6CD0084D4B5 /* CharacterView.swift */; };
+		5E3AF8482C3DC7D90084D4B5 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF8472C3DC7D90084D4B5 /* NetworkImageView.swift */; };
+		5E3AF84C2C3DD5A60084D4B5 /* LoggerFacadeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF84B2C3DD5A60084D4B5 /* LoggerFacadeMock.swift */; };
+		5E3AF84E2C3DDE710084D4B5 /* KeyValueTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF84D2C3DDE710084D4B5 /* KeyValueTextView.swift */; };
 		5E54F0932C398B21004626B0 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0922C398B21004626B0 /* CharactersViewModel.swift */; };
 		5E54F0962C398C65004626B0 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0952C398C65004626B0 /* CharacterRepository.swift */; };
 		5E54F0992C398DE1004626B0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0982C398DE1004626B0 /* ApiClient.swift */; };
@@ -27,9 +33,12 @@
 		5E54F0AD2C39BA51004626B0 /* ApiStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0AC2C39BA51004626B0 /* ApiStatus.swift */; };
 		5E54F0AF2C39C38E004626B0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0AE2C39C38E004626B0 /* Character.swift */; };
 		5E54F0B12C39C6C3004626B0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0B02C39C6C3004626B0 /* String.swift */; };
-		5E54F0B32C3A073B004626B0 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0B22C3A073B004626B0 /* CharacterView.swift */; };
-		5E54F0B52C3A0EA7004626B0 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0B42C3A0EA7004626B0 /* ApiError.swift */; };
-		5E54F0B72C3A27C5004626B0 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0B62C3A27C5004626B0 /* CharacterViewModel.swift */; };
+		5E54F0B32C3A073B004626B0 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0B22C3A073B004626B0 /* CharacterDetailView.swift */; };
+		5E54F0B52C3A0EA7004626B0 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0B42C3A0EA7004626B0 /* ErrorType.swift */; };
+		5EBDB09C2C3B8F650044933A /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = 5EBDB09B2C3B8F650044933A /* Logger */; };
+		5EEFCDDB2C3D8C29007D559A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFCDDA2C3D8C29007D559A /* ActivityIndicator.swift */; };
+		5EEFCDDE2C3D8FBF007D559A /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFCDDD2C3D8FBF007D559A /* OverlayView.swift */; };
+		5EEFCDE02C3D92D2007D559A /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFCDDF2C3D92D2007D559A /* ViewModelState.swift */; };
 		5EFD76E42C3B1DAF0072D434 /* CharactersViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD76E32C3B1DAF0072D434 /* CharactersViewModelTest.swift */; };
 		5EFD76E62C3B30210072D434 /* ApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD76E52C3B30210072D434 /* ApiClientMock.swift */; };
 		5EFD76E82C3B31560072D434 /* CharacterRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD76E72C3B31560072D434 /* CharacterRepositoryMock.swift */; };
@@ -68,6 +77,12 @@
 		5E00C8992C38B24100E359A4 /* RickMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E00C89D2C38B24100E359A4 /* RickMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyUITests.swift; sourceTree = "<group>"; };
 		5E00C89F2C38B24100E359A4 /* RickMortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E3AF83F2C3DAEC10084D4B5 /* LoggerFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFacade.swift; sourceTree = "<group>"; };
+		5E3AF8422C3DB1A50084D4B5 /* LoggerFacadeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFacadeImpl.swift; sourceTree = "<group>"; };
+		5E3AF8452C3DC6CD0084D4B5 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		5E3AF8472C3DC7D90084D4B5 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
+		5E3AF84B2C3DD5A60084D4B5 /* LoggerFacadeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFacadeMock.swift; sourceTree = "<group>"; };
+		5E3AF84D2C3DDE710084D4B5 /* KeyValueTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueTextView.swift; sourceTree = "<group>"; };
 		5E54F0922C398B21004626B0 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		5E54F0952C398C65004626B0 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		5E54F0982C398DE1004626B0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
@@ -80,9 +95,11 @@
 		5E54F0AC2C39BA51004626B0 /* ApiStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiStatus.swift; sourceTree = "<group>"; };
 		5E54F0AE2C39C38E004626B0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		5E54F0B02C39C6C3004626B0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		5E54F0B22C3A073B004626B0 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
-		5E54F0B42C3A0EA7004626B0 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
-		5E54F0B62C3A27C5004626B0 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		5E54F0B22C3A073B004626B0 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		5E54F0B42C3A0EA7004626B0 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		5EEFCDDA2C3D8C29007D559A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		5EEFCDDD2C3D8FBF007D559A /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		5EEFCDDF2C3D92D2007D559A /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
 		5EFD76E32C3B1DAF0072D434 /* CharactersViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModelTest.swift; sourceTree = "<group>"; };
 		5EFD76E52C3B30210072D434 /* ApiClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientMock.swift; sourceTree = "<group>"; };
 		5EFD76E72C3B31560072D434 /* CharacterRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryMock.swift; sourceTree = "<group>"; };
@@ -99,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EBDB09C2C3B8F650044933A /* Logger in Frameworks */,
 				AFE1E6D434A64A6DB9602114 /* Pods_RickMorty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +165,7 @@
 		5E00C8812C38B23F00E359A4 /* RickMorty */ = {
 			isa = PBXGroup;
 			children = (
+				5EEFCDD82C3D8BBC007D559A /* View */,
 				5E54F0B92C3A2E89004626B0 /* Characters */,
 				5E54F0B82C3A2E68004626B0 /* Character */,
 				5E54F0A32C39A875004626B0 /* Util */,
@@ -194,6 +213,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5E3AF8412C3DB18B0084D4B5 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				5E3AF83F2C3DAEC10084D4B5 /* LoggerFacade.swift */,
+				5E3AF8422C3DB1A50084D4B5 /* LoggerFacadeImpl.swift */,
+				5E3AF84B2C3DD5A60084D4B5 /* LoggerFacadeMock.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		5E3AF8442C3DC6BA0084D4B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E3AF8452C3DC6CD0084D4B5 /* CharacterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5E54F0942C398C21004626B0 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,7 +255,6 @@
 				5E54F09D2C399AAE004626B0 /* ApiEndpoint.swift */,
 				5E54F09F2C399E75004626B0 /* ApiMethod.swift */,
 				5E54F0AC2C39BA51004626B0 /* ApiStatus.swift */,
-				5E54F0B42C3A0EA7004626B0 /* ApiError.swift */,
 				5EFD76E52C3B30210072D434 /* ApiClientMock.swift */,
 			);
 			path = Remote;
@@ -227,6 +263,8 @@
 		5E54F0A32C39A875004626B0 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				5E3AF8412C3DB18B0084D4B5 /* Logger */,
+				5EEFCDE12C3D995A007D559A /* Enum */,
 				5E54F0A62C39A8E7004626B0 /* Extension */,
 			);
 			path = Util;
@@ -238,6 +276,7 @@
 				5E54F0A42C39A8AF004626B0 /* URLComponents.swift */,
 				5E54F0A72C39A92E004626B0 /* URLRequest.swift */,
 				5E54F0B02C39C6C3004626B0 /* String.swift */,
+				5EEFCDDF2C3D92D2007D559A /* ViewModelState.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -255,8 +294,7 @@
 		5E54F0B82C3A2E68004626B0 /* Character */ = {
 			isa = PBXGroup;
 			children = (
-				5E54F0B62C3A27C5004626B0 /* CharacterViewModel.swift */,
-				5E54F0B22C3A073B004626B0 /* CharacterView.swift */,
+				5E54F0B22C3A073B004626B0 /* CharacterDetailView.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -264,10 +302,46 @@
 		5E54F0B92C3A2E89004626B0 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				5E3AF8442C3DC6BA0084D4B5 /* View */,
 				5E54F0922C398B21004626B0 /* CharactersViewModel.swift */,
 				5E00C8842C38B23F00E359A4 /* CharactersView.swift */,
 			);
 			path = Characters;
+			sourceTree = "<group>";
+		};
+		5EEFCDD82C3D8BBC007D559A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EEFCDDC2C3D8F57007D559A /* SwiftUI */,
+				5EEFCDD92C3D8BEB007D559A /* UIKit */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EEFCDD92C3D8BEB007D559A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5EEFCDDA2C3D8C29007D559A /* ActivityIndicator.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		5EEFCDDC2C3D8F57007D559A /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				5EEFCDDD2C3D8FBF007D559A /* OverlayView.swift */,
+				5E3AF8472C3DC7D90084D4B5 /* NetworkImageView.swift */,
+				5E3AF84D2C3DDE710084D4B5 /* KeyValueTextView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		5EEFCDE12C3D995A007D559A /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				5E54F0B42C3A0EA7004626B0 /* ErrorType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		5EFD76E22C3B1D530072D434 /* Characters */ = {
@@ -318,6 +392,9 @@
 			dependencies = (
 			);
 			name = RickMorty;
+			packageProductDependencies = (
+				5EBDB09B2C3B8F650044933A /* Logger */,
+			);
 			productName = RickMorty;
 			productReference = 5E00C87F2C38B23F00E359A4 /* RickMorty.app */;
 			productType = "com.apple.product-type.application";
@@ -392,6 +469,9 @@
 				Base,
 			);
 			mainGroup = 5E00C8762C38B23E00E359A4;
+			packageReferences = (
+				5EBDB09A2C3B8F640044933A /* XCRemoteSwiftPackageReference "Logger" */,
+			);
 			productRefGroup = 5E00C8802C38B23F00E359A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -503,25 +583,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3AF84E2C3DDE710084D4B5 /* KeyValueTextView.swift in Sources */,
 				5E54F0AF2C39C38E004626B0 /* Character.swift in Sources */,
 				5E54F09E2C399AAE004626B0 /* ApiEndpoint.swift in Sources */,
 				5E54F0932C398B21004626B0 /* CharactersViewModel.swift in Sources */,
 				5E54F0A52C39A8AF004626B0 /* URLComponents.swift in Sources */,
 				5E54F0B12C39C6C3004626B0 /* String.swift in Sources */,
 				5E00C8852C38B23F00E359A4 /* CharactersView.swift in Sources */,
+				5EEFCDE02C3D92D2007D559A /* ViewModelState.swift in Sources */,
+				5E3AF8432C3DB1A50084D4B5 /* LoggerFacadeImpl.swift in Sources */,
 				5E54F0962C398C65004626B0 /* CharacterRepository.swift in Sources */,
 				5E54F09B2C39905F004626B0 /* ApiClientImpl.swift in Sources */,
+				5E3AF8402C3DAEC10084D4B5 /* LoggerFacade.swift in Sources */,
 				5E54F0A02C399E75004626B0 /* ApiMethod.swift in Sources */,
+				5EEFCDDE2C3D8FBF007D559A /* OverlayView.swift in Sources */,
 				5EFD76E82C3B31560072D434 /* CharacterRepositoryMock.swift in Sources */,
-				5E54F0B72C3A27C5004626B0 /* CharacterViewModel.swift in Sources */,
 				5E00C8832C38B23F00E359A4 /* RickMortyApp.swift in Sources */,
 				5E54F0AD2C39BA51004626B0 /* ApiStatus.swift in Sources */,
 				5E54F0AB2C39AA21004626B0 /* CharacterRepositoryImpl.swift in Sources */,
 				5EFD76E62C3B30210072D434 /* ApiClientMock.swift in Sources */,
-				5E54F0B32C3A073B004626B0 /* CharacterView.swift in Sources */,
-				5E54F0B52C3A0EA7004626B0 /* ApiError.swift in Sources */,
+				5E3AF8482C3DC7D90084D4B5 /* NetworkImageView.swift in Sources */,
+				5E54F0B32C3A073B004626B0 /* CharacterDetailView.swift in Sources */,
+				5EEFCDDB2C3D8C29007D559A /* ActivityIndicator.swift in Sources */,
+				5E3AF84C2C3DD5A60084D4B5 /* LoggerFacadeMock.swift in Sources */,
+				5E54F0B52C3A0EA7004626B0 /* ErrorType.swift in Sources */,
 				5E54F0992C398DE1004626B0 /* ApiClient.swift in Sources */,
 				5E54F0A82C39A92E004626B0 /* URLRequest.swift in Sources */,
+				5E3AF8462C3DC6CD0084D4B5 /* CharacterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,9 +650,6 @@
 		5E00C8A12C38B24100E359A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_ENTITLEMENTS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -595,6 +680,9 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -685,11 +773,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07D7B1B68C1FE4DF67844738 /* Pods-RickMorty.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_ENTITLEMENTS = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -752,11 +839,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D8CE640D2CEEB5F180B658F /* Pods-RickMortyTests.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_ENTITLEMENTS = "";
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Z6X795KD6;
@@ -797,10 +884,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 70D1EBD797C67A37C0246DE6 /* Pods-RickMorty-RickMortyUITests.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_ENTITLEMENTS = "";
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Z6X795KD6;
@@ -874,6 +961,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5EBDB09A2C3B8F640044933A /* XCRemoteSwiftPackageReference "Logger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orley12/Logger.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EBDB09B2C3B8F650044933A /* Logger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EBDB09A2C3B8F640044933A /* XCRemoteSwiftPackageReference "Logger" */;
+			productName = Logger;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E00C8772C38B23E00E359A4 /* Project object */;
 }

@@ -8,24 +8,40 @@
 import SwiftUI
 
 struct CharactersView: View {
+
     @StateObject private var viewModel: CharactersViewModel
     
     init() {
-        let client = ApiClientImpl()
-        let repository = CharacterRepositoryImpl(client)
-        _viewModel = StateObject(wrappedValue: CharactersViewModel(repository))
+        let logger = LoggerFacadeImpl()
+        let client = ApiClientImpl(logger)
+        let repository = CharacterRepositoryImpl(client, logger)
+        _viewModel = StateObject(wrappedValue: CharactersViewModel(repository, logger))
     }
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world! \(String(describing: viewModel.characters))")
+        NavigationStack {
+            List() {
+                ForEach(viewModel.characters) { character in
+                    NavigationLink(value: character) {
+                        CharacterView(character: character)
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Rick & Morty Characters")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: Character.self) { character in
+                CharacterDetailView(character)
+            }
         }
-        .padding()
+        .overlay(viewModel.isLoading ? OverlayView() : nil)
+        .task {
+            await viewModel.loadCharacters()
+        }
+        
     }
 }
+
 
 #Preview {
     CharactersView()

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "logger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orley12/Logger.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e73f3ceb202ee80fe32472b7c6fae1430204c12a"
+      }
+    }
+  ],
+  "version" : 2
+}

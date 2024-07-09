@@ -7,14 +7,23 @@
 
 import Foundation
 
+
 class ApiClientImpl: ApiClient {
+    private let logger: LoggerFacade
+    
+    init(_ logger: LoggerFacade) {
+        self.logger = logger
+    }
+    
     func request(
         method: ApiMethod,
         _ endpoint: ApiEndpoint
     ) async throws -> (Data, URLResponse) {
         
         guard let url = endpoint.url else {
-            throw ApiError.client(error: "An error occured please try again")
+            logger.log(error: "Unable to generate url when ApiClient.request was called")
+            
+            throw ErrorType.client(error: "An error occured please try again")
         }
         
         let urlRequest = URLRequest(url: url, httpMethod: method.rawValue)

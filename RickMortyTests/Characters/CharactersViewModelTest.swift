@@ -8,12 +8,15 @@
 import XCTest
 @testable import RickMorty
 
+@MainActor
 final class CharactersViewModelTest: XCTestCase {
     var repository: CharacterRepositoryMock!
-    
+    var logger: LoggerFacadeMock!
+
     override func setUp()  {
         super.setUp()
         let client = ApiClientMock()
+        logger = LoggerFacadeMock()
         repository = CharacterRepositoryMock(client)
     }
 
@@ -24,7 +27,7 @@ final class CharactersViewModelTest: XCTestCase {
     
     func testCharactersList_ContainsOneItem_WhenCallToLoadCharactersIsSuccessful() async {
         // Given (Arrange)
-        let viewModel = CharactersViewModel(repository)
+        let viewModel =  CharactersViewModel(repository, logger)
 
         // When (Act)
         await viewModel.loadCharacters()
@@ -35,7 +38,7 @@ final class CharactersViewModelTest: XCTestCase {
     
     func testMessage_IsEmptyString_WhenCallToLoadCharactersIsSuccessful() async {
         // Given (Arrange)
-        let viewModel = CharactersViewModel(repository)
+        let viewModel = CharactersViewModel(repository, logger)
 
         // When (Act)
         await viewModel.loadCharacters()
@@ -47,7 +50,7 @@ final class CharactersViewModelTest: XCTestCase {
     func testCharactersList_ContainsZeroItems_WhenCallToLoadCharactersIsUnSuccessful() async {
         // Given (Arrange)
         repository.isErrorTest = true
-        let viewModel = CharactersViewModel(repository)
+        let viewModel = CharactersViewModel(repository, logger)
 
         // When (Act)
         await viewModel.loadCharacters()
@@ -59,7 +62,7 @@ final class CharactersViewModelTest: XCTestCase {
     func testMessage_IsNotEmptyString_WhenCallToLoadCharactersIsUnSuccessful() async {
         // Given (Arrange)
         repository.isErrorTest = true
-        let viewModel = CharactersViewModel(repository)
+        let viewModel = CharactersViewModel(repository, logger)
 
         // When (Act)
         await viewModel.loadCharacters()

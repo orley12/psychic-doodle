@@ -7,41 +7,54 @@
 
 import Foundation
 
-class CharactersViewModel: ObservableObject {
+@MainActor final class CharactersViewModel: ObservableObject {
+    private let logger: LoggerFacade
     private let repository: CharacterRepository
     
     @Published var message = ""
-    @Published var characters = [Character]()
+    @Published var isLoading = false
+    @Published var characters: [Character] = []
     
-    init(_ repository: CharacterRepository) {
+    init(_ repository: CharacterRepository, _ logger: LoggerFacade) {
+        self.logger = logger
         self.repository = repository
-        
-        Task {
-            await loadCharacters()
-        }
     }
     
     func loadCharacters() async -> Void {
             do {
+                setIsLoading(true)
+                
                let characters = try await repository.loadCharacters()
-                await setData(characters)
-            } catch let error as ApiError {
-                await setError(error.message)
+                
+                setIsLoading(false)
+
+                setData(characters)
+            } catch let error as ErrorType {
+                setAndLogError(error.message)
             } catch {
-                await setError(error.localizedDescription)
+                setAndLogError(error.localizedDescription)
             }
     }
     
-    private func setData(_ characters: [Character]) async {
-        await MainActor.run {
-            self.characters = characters
-        }
+    private func setIsLoading(_ value: Bool) {
+        self.isLoading = value
     }
     
-    private func setError(_ message: String) async {
-        await MainActor.run {
-            self.message = message
-        }
+    private func setData(_ characters: [Character]) {
+            self.characters = characters
+    }
+    
+    private func setAndLogError(_ value: String) {
+        setError(value)
+        logError(value)
+    }
+    
+    private func setError(_ value: String) {
+            self.message = value
+    }
+    
+    private func logError(_ value: String) {
+        logger.log(error: value)
     }
 }
     

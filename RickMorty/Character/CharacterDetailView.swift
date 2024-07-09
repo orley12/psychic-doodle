@@ -8,22 +8,54 @@
 import SwiftUI
 
 struct CharacterDetailView: View {
-    @StateObject private var viewModel: CharacterViewModel
     
-    init() {
-        let client = ApiClientImpl()
-        let repository = CharacterRepositoryImpl(client)
-        _viewModel = StateObject(wrappedValue: CharacterViewModel(repository))
+    let character: Character
+    
+    init(_ character: Character) {
+        self.character = character
     }
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world! \(String(describing: viewModel.character))")
+            NetworkImageView(
+                url: URL(string: character.image),
+                height: 300,
+                contentMode: .fill
+            )
+            .padding(.bottom, 8)
+            
+            VStack {
+                KeyValueTextView(
+                    key: "Name" ,
+                    value: character.name,
+                    padding: 8
+                )
+                
+                KeyValueTextView(
+                    key: "Status",
+                    value: character.status,
+                    padding: 8
+                )
+                
+                KeyValueTextView(
+                    key: "Gender",
+                    value: character.gender,
+                    padding: 8
+                )
+                
+                KeyValueTextView(
+                    key: "Location",
+                    value: character.location.name,
+                    padding: 8
+                )
+
+            }
+            
+            Spacer()
+            
+            
         }
-        .padding()
+        .padding(.all, 16)
     }
 }
 

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol ViewModelState {
+    var isLoading: Published<Bool> { get set }
+}
+
+extension ViewModelState {
+}
