@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CharacterView: View {
+struct CharacterDetailView: View {
     @StateObject private var viewModel: CharacterViewModel
     
     init() {
