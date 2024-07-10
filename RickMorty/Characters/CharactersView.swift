@@ -33,6 +33,9 @@ struct CharactersView: View {
             .navigationDestination(for: Character.self) { character in
                 CharacterDetailView(character)
             }
+            .refreshable {
+                await viewModel.loadCharacters()
+            }
         }
         .alert(item: $viewModel.alert) { alert in
             Alert(
