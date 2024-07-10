@@ -36,7 +36,7 @@ final class CharactersViewModelTest: XCTestCase {
         XCTAssertEqual(viewModel.characters.count, 1)
     }
     
-    func testMessage_IsEmptyString_WhenCallToLoadCharactersIsSuccessful() async {
+    func testAlert_IsNil_WhenCallToLoadCharactersIsSuccessful() async {
         // Given (Arrange)
         let viewModel = CharactersViewModel(repository, logger)
 
@@ -44,7 +44,7 @@ final class CharactersViewModelTest: XCTestCase {
         await viewModel.loadCharacters()
 
         // Then (Assert)
-        XCTAssertEqual(viewModel.message, "")
+        XCTAssertEqual(viewModel.alert, nil)
     }
     
     func testCharactersList_ContainsZeroItems_WhenCallToLoadCharactersIsUnSuccessful() async {
@@ -59,7 +59,7 @@ final class CharactersViewModelTest: XCTestCase {
         XCTAssertEqual(viewModel.characters.count, 0)
     }
     
-    func testMessage_IsNotEmptyString_WhenCallToLoadCharactersIsUnSuccessful() async {
+    func testAlert_IsNotNil_WhenCallToLoadCharactersIsUnSuccessful() async {
         // Given (Arrange)
         repository.isErrorTest = true
         let viewModel = CharactersViewModel(repository, logger)
@@ -68,6 +68,6 @@ final class CharactersViewModelTest: XCTestCase {
         await viewModel.loadCharacters()
 
         // Then (Assert)
-        XCTAssertEqual(viewModel.message, "We unable to load characters")
+        XCTAssertNotEqual(viewModel.alert, nil)
     }
 }

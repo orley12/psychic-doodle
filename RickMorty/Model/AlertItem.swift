@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AlertItem: Identifiable {
+struct AlertItem: Identifiable, Equatable {
     var id = UUID()
     var title: String
     var message: String
