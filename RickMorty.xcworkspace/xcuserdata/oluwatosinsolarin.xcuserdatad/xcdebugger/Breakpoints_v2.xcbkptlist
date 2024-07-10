@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "57826F26-9492-4D5D-BBAE-9370CF974634"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9028B81-F141-41D1-8D7C-79E15D66F19E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickMorty/Characters/CharactersViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "loadCharacters()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C9028B81-F141-41D1-8D7C-79E15D66F19E - e7daa152f8f1ea65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for RickMorty.CharactersViewModel.loadCharacters() async -&gt; ()"
+                  moduleName = "RickMorty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/orley/workspace/RickMorty/RickMorty/Characters/CharactersViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "C9028B81-F141-41D1-8D7C-79E15D66F19E - 40a51f3a5b12d460"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for RickMorty.CharactersViewModel.loadCharacters() async -&gt; ()"
+                  moduleName = "RickMorty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/orley/workspace/RickMorty/RickMorty/Characters/CharactersViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

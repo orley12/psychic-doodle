@@ -34,6 +34,13 @@ struct CharactersView: View {
                 CharacterDetailView(character)
             }
         }
+        .alert(item: $viewModel.alert) { alert in
+            Alert(
+                title: Text(alert.title),
+                message: Text(alert.message),
+                dismissButton: .default(Text("OK"))
+            )
+        }
         .overlay(viewModel.isLoading ? OverlayView() : nil)
         .task {
             await viewModel.loadCharacters()

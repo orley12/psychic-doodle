@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 @MainActor final class CharactersViewModel: ObservableObject {
     private let logger: LoggerFacade
     private let repository: CharacterRepository
     
-    @Published var message = ""
+    @Published var alert: AlertItem?
     @Published var isLoading = false
     @Published var characters: [Character] = []
     
@@ -21,19 +22,20 @@ import Foundation
     }
     
     func loadCharacters() async -> Void {
-            do {
-                setIsLoading(true)
-                
-               let characters = try await repository.loadCharacters()
-                
-                setIsLoading(false)
-
-                setData(characters)
-            } catch let error as ErrorType {
-                setAndLogError(error.message)
-            } catch {
-                setAndLogError(error.localizedDescription)
-            }
+        setIsLoading(true)
+        
+        do {
+            let characters = try await repository.loadCharacters()
+            
+            setData(characters)
+        } catch let error as ErrorType {
+            handleError(error)
+        } catch {
+            handleError(ErrorType.client(error: error.localizedDescription))
+        }
+        
+        setIsLoading(false)
+        
     }
     
     private func setIsLoading(_ value: Bool) {
@@ -44,17 +46,17 @@ import Foundation
             self.characters = characters
     }
     
-    private func setAndLogError(_ value: String) {
-        setError(value)
+    private func handleError(_ value: ErrorType) {
+        setAlert(value)
         logError(value)
     }
     
-    private func setError(_ value: String) {
-            self.message = value
+    private func setAlert(_ value: ErrorType) {
+        self.alert = AlertItem(title: value.title, message: value.message)
     }
     
-    private func logError(_ value: String) {
-        logger.log(error: value)
+    private func logError(_ value: ErrorType) {
+        logger.log(error: value.message)
     }
 }
     

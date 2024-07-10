@@ -21,6 +21,7 @@
 		5E3AF8482C3DC7D90084D4B5 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF8472C3DC7D90084D4B5 /* NetworkImageView.swift */; };
 		5E3AF84C2C3DD5A60084D4B5 /* LoggerFacadeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF84B2C3DD5A60084D4B5 /* LoggerFacadeMock.swift */; };
 		5E3AF84E2C3DDE710084D4B5 /* KeyValueTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF84D2C3DDE710084D4B5 /* KeyValueTextView.swift */; };
+		5E3AF8522C3E04620084D4B5 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AF8512C3E04620084D4B5 /* AlertItem.swift */; };
 		5E54F0932C398B21004626B0 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0922C398B21004626B0 /* CharactersViewModel.swift */; };
 		5E54F0962C398C65004626B0 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0952C398C65004626B0 /* CharacterRepository.swift */; };
 		5E54F0992C398DE1004626B0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E54F0982C398DE1004626B0 /* ApiClient.swift */; };
@@ -38,7 +39,6 @@
 		5EBDB09C2C3B8F650044933A /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = 5EBDB09B2C3B8F650044933A /* Logger */; };
 		5EEFCDDB2C3D8C29007D559A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFCDDA2C3D8C29007D559A /* ActivityIndicator.swift */; };
 		5EEFCDDE2C3D8FBF007D559A /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFCDDD2C3D8FBF007D559A /* OverlayView.swift */; };
-		5EEFCDE02C3D92D2007D559A /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFCDDF2C3D92D2007D559A /* ViewModelState.swift */; };
 		5EFD76E42C3B1DAF0072D434 /* CharactersViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD76E32C3B1DAF0072D434 /* CharactersViewModelTest.swift */; };
 		5EFD76E62C3B30210072D434 /* ApiClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD76E52C3B30210072D434 /* ApiClientMock.swift */; };
 		5EFD76E82C3B31560072D434 /* CharacterRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD76E72C3B31560072D434 /* CharacterRepositoryMock.swift */; };
@@ -83,6 +83,7 @@
 		5E3AF8472C3DC7D90084D4B5 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
 		5E3AF84B2C3DD5A60084D4B5 /* LoggerFacadeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFacadeMock.swift; sourceTree = "<group>"; };
 		5E3AF84D2C3DDE710084D4B5 /* KeyValueTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueTextView.swift; sourceTree = "<group>"; };
+		5E3AF8512C3E04620084D4B5 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		5E54F0922C398B21004626B0 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		5E54F0952C398C65004626B0 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		5E54F0982C398DE1004626B0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
@@ -99,7 +100,6 @@
 		5E54F0B42C3A0EA7004626B0 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		5EEFCDDA2C3D8C29007D559A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		5EEFCDDD2C3D8FBF007D559A /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
-		5EEFCDDF2C3D92D2007D559A /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
 		5EFD76E32C3B1DAF0072D434 /* CharactersViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModelTest.swift; sourceTree = "<group>"; };
 		5EFD76E52C3B30210072D434 /* ApiClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientMock.swift; sourceTree = "<group>"; };
 		5EFD76E72C3B31560072D434 /* CharacterRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryMock.swift; sourceTree = "<group>"; };
@@ -209,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				5E54F0AE2C39C38E004626B0 /* Character.swift */,
+				5E3AF8512C3E04620084D4B5 /* AlertItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,7 +277,6 @@
 				5E54F0A42C39A8AF004626B0 /* URLComponents.swift */,
 				5E54F0A72C39A92E004626B0 /* URLRequest.swift */,
 				5E54F0B02C39C6C3004626B0 /* String.swift */,
-				5EEFCDDF2C3D92D2007D559A /* ViewModelState.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -590,7 +590,6 @@
 				5E54F0A52C39A8AF004626B0 /* URLComponents.swift in Sources */,
 				5E54F0B12C39C6C3004626B0 /* String.swift in Sources */,
 				5E00C8852C38B23F00E359A4 /* CharactersView.swift in Sources */,
-				5EEFCDE02C3D92D2007D559A /* ViewModelState.swift in Sources */,
 				5E3AF8432C3DB1A50084D4B5 /* LoggerFacadeImpl.swift in Sources */,
 				5E54F0962C398C65004626B0 /* CharacterRepository.swift in Sources */,
 				5E54F09B2C39905F004626B0 /* ApiClientImpl.swift in Sources */,
@@ -604,6 +603,7 @@
 				5EFD76E62C3B30210072D434 /* ApiClientMock.swift in Sources */,
 				5E3AF8482C3DC7D90084D4B5 /* NetworkImageView.swift in Sources */,
 				5E54F0B32C3A073B004626B0 /* CharacterDetailView.swift in Sources */,
+				5E3AF8522C3E04620084D4B5 /* AlertItem.swift in Sources */,
 				5EEFCDDB2C3D8C29007D559A /* ActivityIndicator.swift in Sources */,
 				5E3AF84C2C3DD5A60084D4B5 /* LoggerFacadeMock.swift in Sources */,
 				5E54F0B52C3A0EA7004626B0 /* ErrorType.swift in Sources */,
