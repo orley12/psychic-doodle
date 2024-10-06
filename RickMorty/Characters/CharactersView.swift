@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  RickMorty
-//
-//  Created by Oluwatosin Solarin on 05/07/2024.
-//
-
 import SwiftUI
 
 struct CharactersView: View {
@@ -12,10 +5,8 @@ struct CharactersView: View {
     @StateObject private var viewModel: CharactersViewModel
     
     init() {
-        let logger = LoggerFacadeImpl()
-        let client = ApiClientImpl(logger)
-        let repository = CharacterRepositoryImpl(client, logger)
-        _viewModel = StateObject(wrappedValue: CharactersViewModel(repository, logger))
+        let appContainer = AppContainer();
+        _viewModel = StateObject(wrappedValue: CharactersViewModel(appContainer.repository, appContainer.logger))
     }
     
     var body: some View {

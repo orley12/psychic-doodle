@@ -23,7 +23,6 @@ class CharacterRepositoryImpl: CharacterRepository {
         
         guard let response =
                 response as? HTTPURLResponse, response.statusCode == 200 else {
-            try FileLogger.shared?.log(error: "We unable to load characters")
             
             logger.log(
                 error: "response from server was invalid \(response) when loadCharacters was called"
@@ -32,8 +31,6 @@ class CharacterRepositoryImpl: CharacterRepository {
             throw ErrorType.http(error: "We unable to load characters")
         }
         
-        try FileLogger.shared?.log(error: "SUCCESS We are able to load characters")
-
         return try JSONDecoder().decode(CharactersRespose.self, from: data).results
     }
     
